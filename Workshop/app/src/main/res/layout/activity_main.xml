@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flRoot"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:auto_show="true"
+        app:surface_type="surface_view"
+        app:use_controller="true"
+        app:controller_layout_id="@layout/custom_exo">
+
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+
+
+</RelativeLayout>
